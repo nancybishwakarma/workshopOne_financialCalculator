@@ -16,5 +16,3 @@ I had to use this code otherwise it was not taking my string input. I found out 
 ![calc 3.2] (calc3.2.png)
 ![calc 3 output] (calc3.png)
 ![Error] (Error.png)
-<img width="892" alt="Homescreen" src="https://github.com/user-attachments/assets/9e2f1111-b673-467e-87e7-e2ec17ddea9e" />
-
