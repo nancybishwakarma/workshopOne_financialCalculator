@@ -101,7 +101,7 @@ public class Main {
 
         }
         else {
-            System.out.println("Please restart again");
+            System.out.println("Please restart again!");
         }
 
 
