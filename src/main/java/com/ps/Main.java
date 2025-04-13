@@ -22,16 +22,19 @@ public class Main {
         scanner.nextLine();
         String infoConfirmation = scanner.nextLine();
 
-        if(infoConfirmation.equalsIgnoreCase("Yes"){
+        if(infoConfirmation.equalsIgnoreCase("Yes")){
            float monthlyInterestRate = (interestRate/(100*12));
            int loanLengthInMonths = loanLength*12;
 
+           double monthlyPayment = principalAmount*((monthlyInterestRate* Math.pow(1+monthlyInterestRate,loanLengthInMonths))/(Math.pow(1+monthlyInterestRate,loanLengthInMonths)-1));
+           double totalInterest = (monthlyPayment*loanLengthInMonths)-principalAmount;
+            System.out.printf("Your monthly payment is: $%.2f\n",monthlyPayment);
 
+            System.out.printf("Your total interest is: $%.2f", totalInterest);
 
-
-
-
-
+        }
+        else {
+            System.out.println("Please restart again");
         }
 
 
@@ -46,6 +49,7 @@ public class Main {
 
 
 
-
     }
+
+
 }
